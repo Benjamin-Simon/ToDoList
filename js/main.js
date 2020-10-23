@@ -4,8 +4,8 @@ let toDoItem = document.getElementById("Todo"),
     toDoList = {},
     i = 0,
     arr = document.getElementById("Arr"),
-    arrlist = document.getElementsByClassName("arrlist"),
-    xdelete = document.getElementsByClassName("delete");
+    arrlist = document.querySelectorAll(".arrlist"),
+    xdelete = document.querySelectorAll(".delete");
 
 
 function myFunction() {
@@ -27,10 +27,12 @@ ok.addEventListener("click", myFunction);
 
 // Почему это работает??????
 arr.onclick = () => {
-  console.log("test");
+  console.log("test_1");
 };
 // А это не работает?????????????????????????????????????????????
 arrlist.onclick = () => {
-  console.log("test");
+  console.log("test_2");
 };
+
+
 
